@@ -1,36 +1,20 @@
-#include <cmath>
-#include <iostream>
+#include "chapter1.hpp"
 
 
-int p2_solution(const int a, const int b) {
-    int c_a, c_b, tmp;
-    float div;
+unsigned int gcd(const unsigned int a, const unsigned int b) {
+    unsigned int c_a, c_b, tmp;
     tmp = 0;
-    c_a = std::min(a, b);
     c_b = std::max(a, b);
-    while ( (c_b % c_a) != 0 ) {
-        div = c_b / c_a;
-        tmp = c_b;
+    c_a = std::min(a, b);
+    while ( c_a != 0 ) {
+        tmp = c_b % c_a;
         c_b = c_a;
-        c_a = tmp - c_a * std::floor(div);
+        c_a = tmp;
     }
-    return c_a;
+    return c_b;
 }
-/*
-int main (int argc, char* argv[]) {
-    int a, b;
-    std::cout << "Please enter first number: ";
-    std::cin >> a;
-    std::cout << "Please enter second number: ";
-    std::cin >> b;
 
-    int result = p2_solution(a, b);
-    std::cout << "The greatest common divisor of "
-              << a
-              << " and "
-              << b
-              << " is "
-              << result
-              << std::endl;
+
+unsigned int p2_solution(const unsigned int a, const unsigned int b) {
+    return gcd(a, b);
 }
-*/

@@ -1,7 +1,12 @@
 project(Chapter-1)
 
 set(LIB_NAME chapter1)
-set(LIB_SOURCES p1.cpp p2.cpp)
+set(LIB_SOURCES
+      p1.cpp
+      p2.cpp
+      p3.cpp
+      p4.cpp
+   )
 
 add_library(${LIB_NAME} STATIC ${LIB_SOURCES})
 
