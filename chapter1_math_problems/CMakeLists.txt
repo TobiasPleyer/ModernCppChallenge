@@ -11,6 +11,3 @@ set(LIB_SOURCES
 add_library(${LIB_NAME} STATIC ${LIB_SOURCES})
 
 add_dependencies(${LIB_NAME} range-v3)
-#install(TARGETS ${LIB_NAME}
-#        ARCHIVE
-#        DESTINATION bin)
