@@ -104,4 +104,18 @@ int main(int argc, char* argv[]) {
         p6_solution(inp1);
         std::cout << std::endl;
     }
+    {
+        int inp1;
+        inp1 = 10000;
+        std::cout << "Chapter 1"
+                  << std::endl;
+        std::cout << "  Problem 7"
+                  << std::endl
+                  << "    Input: "
+                  << inp1
+                  << std::endl
+                  << "    Result: ";
+        p7_solution(inp1);
+        std::cout << std::endl;
+    }
 }
