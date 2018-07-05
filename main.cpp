@@ -90,4 +90,18 @@ int main(int argc, char* argv[]) {
         p5_solution(inp1);
         std::cout << std::endl;
     }
+    {
+        int inp1;
+        inp1 = 150;
+        std::cout << "Chapter 1"
+                  << std::endl;
+        std::cout << "  Problem 6"
+                  << std::endl
+                  << "    Input: "
+                  << inp1
+                  << std::endl
+                  << "    Result: ";
+        p6_solution(inp1);
+        std::cout << std::endl;
+    }
 }
