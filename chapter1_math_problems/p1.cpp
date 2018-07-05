@@ -11,7 +11,7 @@ auto is_not_div_by(int n) {
 }
 
 
-int p1_solution(int limit) {
+int p1_solution(const int limit) {
     auto ints = ranges::view::iota(0, limit+1);
     auto pred1 = is_div_by(3);
     auto pred2 = is_div_by(5);

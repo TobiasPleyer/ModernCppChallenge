@@ -76,4 +76,18 @@ int main(int argc, char* argv[]) {
                   << result
                   << std::endl;
     }
+    {
+        int inp1;
+        inp1 = 1500;
+        std::cout << "Chapter 1"
+                  << std::endl;
+        std::cout << "  Problem 5"
+                  << std::endl
+                  << "    Input: "
+                  << inp1
+                  << std::endl
+                  << "    Result: ";
+        p5_solution(inp1);
+        std::cout << std::endl;
+    }
 }
