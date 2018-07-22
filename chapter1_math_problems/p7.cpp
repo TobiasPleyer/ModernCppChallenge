@@ -7,16 +7,6 @@ unsigned int divisor_sum(const unsigned int n) {
 }
 
 
-template<typename Fst, typename Snd>
-void print_pair(std::pair<Fst,Snd> pair) {
-    std::cout << "("
-              << pair.first
-              << ", "
-              << pair.second
-              << ") ";
-}
-
-
 void p7_solution(const unsigned int limit) {
     std::vector<std::pair<unsigned int,unsigned int>> amicable_numbers{};
     for(unsigned int n=1; n <= limit; ++n) {

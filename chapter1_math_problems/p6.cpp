@@ -25,16 +25,6 @@ bool is_abundant(const unsigned int number) {
 }
 
 
-template<typename Fst, typename Snd>
-void print_pair(std::pair<Fst,Snd> pair) {
-    std::cout << "("
-              << pair.first
-              << ", "
-              << pair.second
-              << ") ";
-}
-
-
 void p6_solution(const unsigned int limit) {
     auto ints = ranges::view::iota(1, (int)limit);
     auto abundant_numbers = ints | ranges::view::transform([](int i){return std::make_pair(i, abundance(i));})

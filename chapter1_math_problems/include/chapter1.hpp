@@ -25,6 +25,16 @@ int abundance(const unsigned int number);
 bool is_abundant(const unsigned int number);
 unsigned int divisor_sum(const unsigned int n);
 
+
+template<typename Fst, typename Snd>
+void print_pair(std::pair<Fst,Snd> pair) {
+    std::cout << "("
+              << pair.first
+              << ", "
+              << pair.second
+              << ") ";
+}
+
 // Solution functions
 int p1_solution(const int);
 unsigned int p2_solution(const unsigned int, const unsigned int);
