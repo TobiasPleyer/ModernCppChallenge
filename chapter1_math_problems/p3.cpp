@@ -1,11 +1,6 @@
 #include "chapter1.hpp"
 
 
-unsigned int lcm(const unsigned int a, const unsigned int b) {
-    return (a * b) / gcd(a, b);
-}
-
-
 unsigned int p3_solution(int argc, ...) {
     va_list numbers;
     int seen;

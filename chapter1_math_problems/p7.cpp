@@ -1,12 +1,6 @@
 #include "chapter1.hpp"
 
 
-unsigned int divisor_sum(const unsigned int n) {
-    auto proper_divisors = get_proper_divisors(n);
-    return (unsigned int)std::accumulate(proper_divisors.begin(), proper_divisors.end(), 0);
-}
-
-
 void p7_solution(const unsigned int limit) {
     std::vector<std::pair<unsigned int,unsigned int>> amicable_numbers{};
     for(unsigned int n=1; n <= limit; ++n) {
@@ -23,7 +17,7 @@ void p7_solution(const unsigned int limit) {
             }
         }
     }
-    for(auto p: amicable_numbers) {
-        print_pair<unsigned int,unsigned int>(p);
+    for(auto const& p: amicable_numbers) {
+        print_pair<>(p);
     }
 }

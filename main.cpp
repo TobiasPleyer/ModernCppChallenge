@@ -3,10 +3,10 @@
 
 
 int main(int argc, char* argv[]) {
+    std::cout << "Chapter 1"
+              << std::endl;
     {
         int inp1, result;
-        std::cout << "Chapter 1"
-                  << std::endl;
         inp1 = 112;
         result = p1_solution(inp1);
         std::cout << "  Problem 1"
@@ -64,8 +64,6 @@ int main(int argc, char* argv[]) {
     {
         int inp1, result;
         inp1 = 1062;
-        std::cout << "Chapter 1"
-                  << std::endl;
         result = p4_solution(inp1);
         std::cout << "  Problem 4"
                   << std::endl
@@ -79,8 +77,6 @@ int main(int argc, char* argv[]) {
     {
         int inp1;
         inp1 = 1500;
-        std::cout << "Chapter 1"
-                  << std::endl;
         std::cout << "  Problem 5"
                   << std::endl
                   << "    Input: "
@@ -93,8 +89,6 @@ int main(int argc, char* argv[]) {
     {
         int inp1;
         inp1 = 150;
-        std::cout << "Chapter 1"
-                  << std::endl;
         std::cout << "  Problem 6"
                   << std::endl
                   << "    Input: "
@@ -107,8 +101,6 @@ int main(int argc, char* argv[]) {
     {
         int inp1;
         inp1 = 10000;
-        std::cout << "Chapter 1"
-                  << std::endl;
         std::cout << "  Problem 7"
                   << std::endl
                   << "    Input: "
@@ -116,6 +108,30 @@ int main(int argc, char* argv[]) {
                   << std::endl
                   << "    Result: ";
         p7_solution(inp1);
+        std::cout << std::endl;
+    }
+    {
+        int inp1;
+        inp1 = 9999;
+        std::cout << "  Problem 8"
+                  << std::endl
+                  << "    Input: "
+                  << inp1
+                  << std::endl
+                  << "    Result: ";
+        p8_solution(inp1);
+        std::cout << std::endl;
+    }
+    {
+        int inp1;
+        inp1 = 2096;
+        std::cout << "  Problem 9"
+                  << std::endl
+                  << "    Input: "
+                  << inp1
+                  << std::endl
+                  << "    Result: ";
+        p9_solution(inp1);
         std::cout << std::endl;
     }
 }

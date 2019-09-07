@@ -1,16 +1,6 @@
 #include "chapter1.hpp"
 
 
-auto is_div_by(int n) {
-    return [n](int i) -> bool { return (0 == (i % n)); };
-}
-
-
-auto is_not_div_by(int n) {
-    return [n](int i) -> bool { return (0 != (i % n)); };
-}
-
-
 int p1_solution(const int limit) {
     auto ints = ranges::view::iota(0, limit+1);
     auto pred1 = is_div_by(3);
