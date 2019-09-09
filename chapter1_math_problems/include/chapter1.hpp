@@ -49,5 +49,6 @@ void p6_solution(const unsigned int limit);
 void p7_solution(const unsigned int limit);
 void p8_solution(const unsigned int limit);
 void p9_solution(const unsigned int limit);
+void p10_solution();
 
 #endif

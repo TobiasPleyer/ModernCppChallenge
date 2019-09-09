@@ -12,6 +12,7 @@ set(LIB_SOURCES
       p7.cpp
       p8.cpp
       p9.cpp
+      p10.cpp
    )
 
 add_library(${LIB_NAME} STATIC ${LIB_SOURCES})

@@ -134,4 +134,10 @@ int main(int argc, char* argv[]) {
         p9_solution(inp1);
         std::cout << std::endl;
     }
+    {
+        std::cout << "  Problem 10"
+                  << std::endl;
+        p10_solution();
+        std::cout << std::endl;
+    }
 }
